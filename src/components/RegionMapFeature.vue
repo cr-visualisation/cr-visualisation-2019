@@ -88,7 +88,7 @@ export default {
       }
     },
     getGeoJSON() {
-      get(`https://test.brough.io/christian-right-spending/map/${this.region}.geojson`)
+      get(`https://cr-visualisation.github.io/cr-visualisation/map/${this.region}.geojson`)
       .then(response => {
         this.geojson = response.data
       })
