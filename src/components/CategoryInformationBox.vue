@@ -21,7 +21,7 @@ export default {
   },
   methods: {
     getCategoryDescription() {
-      get(`https://markbrough.github.io/cr-visualisation/category-summaries/${this.selectedCategory}.md`)
+      get(`https://cr-visualisation.github.io/cr-visualisation/category-summaries/${this.selectedCategory}.md`)
       .then(response => {
         this.categoryDescriptionText = md.render(response.data)
       })

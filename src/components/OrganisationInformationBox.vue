@@ -29,7 +29,7 @@ export default {
   },
   methods: {
     getOrganisationDescription() {
-      get(`https://markbrough.github.io/cr-visualisation/organisation-descriptions/${this.selectedOrganisation}.md`)
+      get(`https://cr-visualisation.github.io/cr-visualisation/organisation-descriptions/${this.selectedOrganisation}.md`)
       .then(response => {
         this.organisationDescriptionText = md.render(response.data)
       })

@@ -365,13 +365,13 @@ export default {
         if (isNaN(_value)) { return null }
         return _value
       }
-      await get('https://markbrough.github.io/cr-visualisation/organisations.csv')
+      await get('https://cr-visualisation.github.io/cr-visualisation/organisations.csv')
       .then(response => {
         csvtojson().fromString(response.data).then((jsonData=> {
           this.organisations = jsonData
         }))
       })
-      await get('https://markbrough.github.io/cr-visualisation/spending.csv')
+      await get('https://cr-visualisation.github.io/cr-visualisation/spending.csv')
       .then(response => {
         csvtojson({colParser: {
             'Year': (item) => {
