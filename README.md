@@ -1,6 +1,6 @@
 # US Christian right spending visualisation
 
-This visualisation uses `vue-cli`, and it is MIT-Licensed, so feel free to make changes to the software as you see fit!
+This visualisation uses `vue-cli`. It is MIT-Licensed, so feel free to make changes to the software as you see fit!
 
 ## Installation
 
