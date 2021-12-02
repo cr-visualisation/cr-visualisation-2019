@@ -111,7 +111,7 @@
 .visualisation-container {
   padding: 20px 15px 30px 15px;
   font-family: 'Open Sans',sans-serif;
-  background: url('./background.png');
+  background: '#ffffff';
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -154,7 +154,7 @@ export default {
       'Europe', 'Latin America', 'Middle East & North Africa',
       'North America (outside the US)'],
       organisations: [],
-      years: [2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018],
+      years: [2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019],
       spending: [],
       selectedOrganisation: null,
       selectedRegions: [],
@@ -365,13 +365,13 @@ export default {
         if (isNaN(_value)) { return null }
         return _value
       }
-      await get('https://cr-visualisation.github.io/cr-visualisation/organisations.csv')
+      await get('https://cr-visualisation.github.io/cr-visualisation-2019/organisations.csv')
       .then(response => {
         csvtojson().fromString(response.data).then((jsonData=> {
           this.organisations = jsonData
         }))
       })
-      await get('https://cr-visualisation.github.io/cr-visualisation/spending.csv')
+      await get('https://cr-visualisation.github.io/cr-visualisation-2019/spending.csv')
       .then(response => {
         csvtojson({colParser: {
             'Year': (item) => {
