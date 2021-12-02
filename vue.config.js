@@ -3,5 +3,6 @@ module.exports = {
     config.externals = {
       moment: 'moment'
     }
-  }
+  },
+  publicPath: '/cr-visualisation-2019/'
 }
