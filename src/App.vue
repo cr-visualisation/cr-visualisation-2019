@@ -2,8 +2,8 @@
   <b-container class="visualisation-container" fluid>
     <b-row>
       <b-col>
-        <h1>The $280 million ‘dark money’ global empire of the US Christian right</h1>
-        <p class="lead">Since 2008, US Christian right groups, many of them linked to the Trump administration, and notorious for fighting LGBT and women’s reproductive rights, have spent more than $280 million of ‘dark money’ outside the US. Explore their empires of influence.</p>
+        <h1>The ‘dark money’ global empire of the US Christian right</h1>
+        <p class="lead">Since 2007, US Christian right groups, many of them linked to the Trump administration, and notorious for fighting LGBT and women’s reproductive rights, have spent at least $297 million of ‘dark money’ outside the US. Explore their empires of influence.</p>
       </b-col>
     </b-row>
     <b-row class="mb-2">
